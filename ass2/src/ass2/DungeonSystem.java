@@ -282,7 +282,6 @@ public class DungeonSystem extends Observable {
 		squares[1][2].addStructure(wall);
 		squares[2][2].addStructure(wall);
 		squares[3][5].addStructure(wall);
-		squares[5][3].addStructure(wall);
 		squares[4][4].addStructure(wall);
 		squares[4][2].addStructure(wall);
 		squares[3][4].addStructure(wall);

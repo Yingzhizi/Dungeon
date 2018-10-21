@@ -1,27 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 
-<Pane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane fx:id="dungeon" layoutX="101.0" layoutY="19.0" prefHeight="16.0" prefWidth="56.0">
       </GridPane>
-      <Button fx:id="Start" layoutX="581.0" layoutY="23.0" mnemonicParsing="false" onAction="#startGame" text="Play" />
-      <VBox layoutX="554.0" layoutY="71.0" prefHeight="16.0" prefWidth="146.0">
+      <Button fx:id="Start" layoutX="748.0" layoutY="35.0" mnemonicParsing="false" onAction="#startGame" prefHeight="27.0" prefWidth="97.0" text="Play" />
+      <VBox layoutX="713.0" layoutY="84.0" prefHeight="16.0" prefWidth="146.0">
          <children>
-            <ChoiceBox fx:id="itemList" prefHeight="25.0" prefWidth="157.0" />
+            <ChoiceBox fx:id="itemList" prefHeight="27.0" prefWidth="196.0" />
          </children>
       </VBox>
-      <TextField layoutX="567.0" layoutY="113.0" prefHeight="25.0" prefWidth="45.0" fx:id="xCoord" />
-      <TextField fx:id="yCoord" layoutX="663.0" layoutY="113.0" prefHeight="25.0" prefWidth="45.0" />
-      <Label layoutX="548.0" layoutY="118.0" text="x:" />
-      <Label layoutX="642.0" layoutY="118.0" text="y:" />
-      <Button layoutX="580.0" layoutY="162.0" mnemonicParsing="false" onAction="#addToMap" text="Add to Map" />
+      <TextField layoutX="727.0" layoutY="126.0" prefHeight="25.0" prefWidth="45.0" fx:id="xCoord" />
+      <TextField fx:id="yCoord" layoutX="822.0" layoutY="126.0" prefHeight="25.0" prefWidth="45.0" />
+      <Label layoutX="707.0" layoutY="131.0" text="x:" />
+      <Label layoutX="801.0" layoutY="131.0" text="y:" />
+      <Button layoutX="727.0" layoutY="175.0" mnemonicParsing="false" onAction="#addToMap" prefHeight="27.0" prefWidth="138.0" text="Add to Map" />
+      <Label layoutX="723.0" layoutY="76.0" />
+      <Label layoutX="750.0" layoutY="308.0" text="Inventory" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/bomb_unlit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/treasure.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/key.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/sword.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="795.0" layoutY="354.0" text="x" />
+      <Label layoutX="795.0" layoutY="399.0" text="x" />
+      <Label layoutX="795.0" layoutY="448.0" text="x" />
+      <Label layoutX="795.0" layoutY="496.0" text="x" />
+      <Label layoutX="795.0" layoutY="537.0" text="x" />
+      <Label fx:id="item1" layoutX="809.0" layoutY="354.0" text="Label" />
+      <Label fx:id="item2" layoutX="809.0" layoutY="399.0" text="Label" />
+      <Label fx:id="item3" layoutX="809.0" layoutY="448.0" text="Label" />
+      <Label fx:id="item4" layoutX="809.0" layoutY="496.0" text="Label" />
+      <Label fx:id="item5" layoutX="809.0" layoutY="537.0" text="Label" />
+      <Label layoutX="751.0" layoutY="218.0" text="Lives:" />
+      <Label layoutX="790.0" layoutY="264.0" prefHeight="16.0" prefWidth="8.0" text="x" />
+      <Label fx:id="numLives" layoutX="804.0" layoutY="264.0" text="Label" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/player_stand.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
