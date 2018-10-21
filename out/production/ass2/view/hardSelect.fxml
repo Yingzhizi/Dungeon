@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane prefHeight="900.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Label alignment="CENTER" layoutX="128.0" layoutY="67.0" prefHeight="84.0" prefWidth="344.0" text="Select Difficulty">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="easyBtn" layoutX="225.0" layoutY="211.0" mnemonicParsing="false" onAction="#handleEasyPlay" prefHeight="51.0" prefWidth="151.0" text="Easy" />
+      <Button fx:id="mediumBtn" layoutX="225.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleMidPlay" prefHeight="51.0" prefWidth="151.0" text="Medium" />
+      <Button fx:id="hardBtn" layoutX="225.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleHardPlay" prefHeight="51.0" prefWidth="151.0" text="Hard" />
+   </children>
+</Pane>

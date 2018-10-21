@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="dungeon" layoutX="101.0" layoutY="19.0" prefHeight="16.0" prefWidth="56.0">
+      </GridPane>
+      <Button fx:id="Start" layoutX="581.0" layoutY="23.0" mnemonicParsing="false" onAction="#startGame" text="Play" />
+      <VBox layoutX="554.0" layoutY="71.0" prefHeight="16.0" prefWidth="146.0">
+         <children>
+            <ChoiceBox fx:id="itemList" prefHeight="25.0" prefWidth="157.0" />
+         </children>
+      </VBox>
+      <TextField layoutX="567.0" layoutY="113.0" prefHeight="25.0" prefWidth="45.0" fx:id="xCoord" />
+      <TextField fx:id="yCoord" layoutX="663.0" layoutY="113.0" prefHeight="25.0" prefWidth="45.0" />
+      <Label layoutX="548.0" layoutY="118.0" text="x:" />
+      <Label layoutX="642.0" layoutY="118.0" text="y:" />
+      <Button layoutX="580.0" layoutY="162.0" mnemonicParsing="false" onAction="#addToMap" text="Add to Map" />
+   </children>
+</Pane>

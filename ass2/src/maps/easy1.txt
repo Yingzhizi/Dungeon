@@ -1,0 +1,3 @@
+4 1 arrow
+3 3 sword
+1 6 bomb

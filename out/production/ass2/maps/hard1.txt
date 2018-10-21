@@ -1,0 +1,4 @@
+5 5 treasure
+5 4 treasure
+6 5 treasure
+5 6 treasure

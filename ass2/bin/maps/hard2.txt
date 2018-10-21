@@ -1,0 +1,5 @@
+1 2 treasure
+2 1 treasure
+10 10 treasure
+11 11 sword
+6 10 arrow

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="dungeon" gridLinesVisible="true" layoutX="21.0" layoutY="25.0" opacity="0.66" prefHeight="92.0" prefWidth="200.0">
+         <opaqueInsets>
+            <Insets top="1.0" />
+         </opaqueInsets>
+      </GridPane>
+      <Button fx:id="startButton" layoutX="632.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleStartButton" text="Start game" />
+      <Label layoutX="750.0" layoutY="163.0" text="Inventory" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/bomb_unlit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/treasure.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/key.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/sword.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="795.0" layoutY="209.0" text="x" />
+      <Label layoutX="795.0" layoutY="254.0" text="x" />
+      <Label layoutX="795.0" layoutY="303.0" text="x" />
+      <Label layoutX="795.0" layoutY="351.0" text="x" />
+      <Label layoutX="795.0" layoutY="392.0" text="x" />
+      <Label fx:id="item1" layoutX="809.0" layoutY="209.0" text="Label" />
+      <Label fx:id="item2" layoutX="809.0" layoutY="254.0" text="Label" />
+      <Label fx:id="item3" layoutX="809.0" layoutY="303.0" text="Label" />
+      <Label fx:id="item4" layoutX="809.0" layoutY="351.0" text="Label" />
+      <Label fx:id="item5" layoutX="809.0" layoutY="392.0" text="Label" />
+      <Button fx:id="exitButton" layoutX="741.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleExit" text="Exit to Main Menu" />
+      <Label layoutX="751.0" layoutY="73.0" text="Lives:" />
+      <Label layoutX="790.0" layoutY="119.0" prefHeight="16.0" prefWidth="8.0" text="x" />
+      <Label fx:id="numLives" layoutX="804.0" layoutY="119.0" text="Label" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/player_stand.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="751.0" layoutY="458.0" text="Objectives:" />
+      <Label fx:id="objectives" alignment="TOP_LEFT" layoutX="751.0" layoutY="483.0" prefHeight="106.0" prefWidth="130.0" />
+   </children>
+</Pane>

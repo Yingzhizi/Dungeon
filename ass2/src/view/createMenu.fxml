@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="900.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="113.0" layoutY="57.0" prefHeight="62.0" prefWidth="375.0" text="Mode 2 Menu">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberTF" layoutX="337.0" layoutY="199.0" />
+      <Label layoutX="63.0" layoutY="191.0" prefHeight="41.0" prefWidth="264.0" text="Enter dungeon size (&gt;=4 or &lt;=20): " />
+      <Button fx:id="createBtn" layoutX="194.0" layoutY="245.0" mnemonicParsing="false" onAction="#checkDigit" prefHeight="41.0" prefWidth="213.0" text="Create Dungeon" />
+      <VBox fx:id="outOfRange" layoutX="144.0" layoutY="345.0" managed="false" prefHeight="15.0" prefWidth="222.0" visible="false">
+         <children>
+            <Label prefHeight="22.0" prefWidth="213.0" text="Error: Enter a number in range" />
+         </children>
+      </VBox>
+      <VBox fx:id="notAnInt" layoutX="144.0" layoutY="340.0" managed="false" prefHeight="25.0" prefWidth="202.0" visible="false">
+         <children>
+            <Label prefHeight="15.0" prefWidth="215.0" text="Error: Integer expected" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,4 @@
+2 2 bomb
+1 6 arrow
+4 4 treasure
+3 4 treasure
